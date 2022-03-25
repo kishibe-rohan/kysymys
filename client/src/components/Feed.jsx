@@ -8,6 +8,9 @@ const Feed = () => {
     <div className="flex flex-col p-2 flex-1  md:flex-[0.6]">
       <Container/>
       <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </div>
   )
 }
