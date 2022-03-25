@@ -48,7 +48,7 @@ const Header = () => {
        };
 
        await axios.post('/api/questions',body,config).then((res) => {
-         alert.success(res.data.message);
+         alert.success("Question submitted");
          window.location.href = "/";
        }).catch((e) => {
         alert.error("Error in adding question");
