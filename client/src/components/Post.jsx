@@ -68,7 +68,7 @@ const Post = () => {
        </div>
 
        <div className="flex flex-col items-center mt-1">
-         <div className='bg-gray-100 py-1 px-2 flex items-center justify-between rounded-3xl'>
+         <div className='bg-gray-100 w-full mt-1 py-1 px-2 flex items-center justify-between rounded-3xl'>
             <ArrowUpwardOutlined className="text-orange-300 cursor-pointer mr-[40px]" />
             <ArrowDownwardOutlined className="text-orange-300 cursor-pointer mr-[40px]" />
             <RepeatOneOutlined  className="text-orange-300 cursor-pointer ml-[30px]"/>

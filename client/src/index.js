@@ -7,11 +7,16 @@ import en from "javascript-time-ago/locale/en.json";
 import App from "./App";
 import "./index.css";
 
+import { Provider } from "react-redux";
+import store from "./store";
+
 TimeAgo.addDefaultLocale(en);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
