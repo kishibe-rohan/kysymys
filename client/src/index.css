@@ -4,11 +4,11 @@
 
 @layer components {
   .headerIcon {
-    @apply p-[5px] text-orange-400 cursor-pointer hover:text-orange-500 hover:bg-[#eee] hover:rounded-full;
+    @apply p-[5px] text-orange-400 cursor-pointer hover:text-orange-500 hover:bg-[#eee] hover:rounded-full transition-all duration-300 ease-out;
   }
 
   .sideBarOption {
-    @apply flex items-center cursor-pointer p-[10px] hover:bg-gray-300 hover:rounded-sm;
+    @apply flex items-center cursor-pointer p-[10px] hover:bg-gray-300 hover:rounded-sm transition-all duration-300 ease-out;
   }
 
   .sideBarIcon {
@@ -17,5 +17,13 @@
 
   .sideBarText {
     @apply ml-[10px] text-gray-500 font-semibold text-sm;
+  }
+
+  .widgetContent {
+    @apply m-1 p-1 border-b-2 border-solid border-gray-100 flex hover:bg-gray-100 transition-all duration-300 ease-out;
+  }
+
+  .widgetImg {
+    @apply h-11 w-11 rounded-full;
   }
 }

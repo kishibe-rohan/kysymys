@@ -5,7 +5,7 @@ import Container from './Container'
 
 const Feed = () => {
   return (
-    <div className="flex flex-col sm:flex-1 md:flex-[0.6]">
+    <div className="flex flex-col p-2 flex-1  md:flex-[0.6]">
       <Container/>
       <Post/>
     </div>
