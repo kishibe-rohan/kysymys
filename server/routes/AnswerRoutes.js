@@ -4,7 +4,7 @@ const router = express.Router();
 const answerDB = require("../models/AnswerModel");
 
 //Answer a question
-router.post("/", (req, res) => {
+router.post("/", async (req, res) => {
   try {
     await answerDB
       .create({

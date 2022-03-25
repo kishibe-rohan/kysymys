@@ -13,4 +13,4 @@ const AnswerSchema = new mongoose.Schema({
   user: Object,
 });
 
-module.exports = mongoose.model("Answers");
+module.exports = mongoose.model("Answers", AnswerSchema);

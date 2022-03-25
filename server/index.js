@@ -5,6 +5,8 @@ const path = require("path");
 
 const PORT = process.env.PORT || 5000;
 const app = express();
+const db = require("./db");
+const router = require("./routes");
 
 //Middlewares
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -17,7 +19,13 @@ app.use((req, res, next) => {
   next();
 });
 
+//Routes
+app.use("/api", router);
+
 app.use(cors());
+
+//Connect to DB
+db.connect();
 
 //Start Server
 app.listen(PORT, () => {
