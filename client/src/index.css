@@ -4,6 +4,18 @@
 
 @layer components {
   .headerIcon {
-    @apply p-[5px] cursor-pointer hover:bg-[#eee] hover:rounded-lg;
+    @apply p-[5px] text-orange-400 cursor-pointer hover:text-orange-500 hover:bg-[#eee] hover:rounded-full;
+  }
+
+  .sideBarOption {
+    @apply flex items-center cursor-pointer p-[10px] hover:bg-gray-300 hover:rounded-sm;
+  }
+
+  .sideBarIcon {
+    @apply text-orange-400 h-[30px] rounded-sm ml-[20px] text-sm;
+  }
+
+  .sideBarText {
+    @apply ml-[10px] text-gray-500 font-semibold text-sm;
   }
 }
